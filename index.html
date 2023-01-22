@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
@@ -21,7 +21,78 @@
     - The freeCodeCamp Team
 
     -->
-    <h1>Hello World, we are software developers!</h1>
-    <script  src="js/index.js"></script>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form id="survey-form">
+      <div class="input-group">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" />
+      </div>
+
+      <div class="input-group">
+        <label for="email" id="email-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <div class="input-group">
+        <label for="number" id="number-label">Age(optional)</label>
+        <input type="number" id="number" min="10" max="99 placeholder="Age">
+      </div>
+
+      <div class="input-group">
+        <p>Which option best describes your current role?</p>
+        <select name="" id="dropdown" required>
+          <option value="select" disabled selected value>Select current role</option>
+          <option value="students">Students</option>
+          <option value="full-time-job">Full Time Job</option>
+        </select>
+      </div>
+      <div class="input-group radio">
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label>
+          <input type="radio" name="choice" value="definitely" id="radio1" />
+          Definitely
+        </label>
+        <label>
+          <input type="radio" name="choice" value="maybe" id="radio2" />
+          Maybe
+        </label>
+        <label>
+          <input type="radio" name="choice" value="not-sure" id="radio1" />
+          Not sure
+        </label>
+      </div>
+      <div class="input-group">
+        <p>What would you like to see improved? (Check all that apply</p>
+        <label>
+          <input type="checkbox" name="" id="" value="front-end-projects">
+          Front-end Projects
+        </label>
+        <label>
+          <input type="checkbox" name="" id="" value="back-end-projects">
+          Back-end Projects
+        </label>
+        <label>
+          <input type="checkbox" name="" id="" value="Data-visualization">
+          Data Visualization
+        </label>
+      </div>
+
+      <div class="input-group">
+        <p>Additional comments</p>
+        <textarea name="" id="comments" rows="7" placeholder="Enter your comment here"></textarea>
+      </div>
+      <div class="input-group">
+        <button id="submit">Submit</button>
+      </div>
+    </form>
+    <script src="js/index.js"></script>
   </body>
 </html>

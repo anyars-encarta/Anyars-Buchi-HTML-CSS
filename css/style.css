@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: 'poppins', sans-serif;
+    background: linear-gradient(115deg,
+            rgba(58, 58, 158, 0.8),
+            rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+     background-position: center;
+     background-size: cover;  
+     background-repeat: no-repeat;  
+     background-attachment: fixed; 
+     padding: 20px 100px;  
+}
+
+#title{
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+#description{
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    padding: 0 0 35px;
+}
+
+#survey-form{
+background: #292848;
+padding: 50px;
+border-radius: 5px;
+max-width: 800px;
+margin: 0 auto;
+}
+
+.input-group{
+    margin: 20px 0 ;
+}
+
+.input-group input[type='email'],
+.input-group input[type='text'],
+.input-group input[type='number']{
+    display: block;
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    padding: 13px ;
+    border:  none;
+    font-family: 'poppins';
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.input-group label{
+    color: #fff;
+}
+
+.input-group p{
+    color: #fff;
+}
+
+.input-group select{
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 13px;
+    font-family: 'poppins';
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.input-group label{
+    display: block;
+    width: 100%;
+    margin: 14px 0 0px;
+}
+
+.input-group textarea{
+    width: 100%;
+    border-radius: 5px;
+    padding: 13px ;
+    border:  none;
+    font-family: 'poppins';
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.input-group button{
+    background: #38AF64;
+    border: none;
+    border-radius: 5px;
+    height: 45px;
+    font-size: 15px;
+    width: 100%;
+    color: #fff;
+    font-family:  poppins;
+    cursor: pointer;
+}
+
+
